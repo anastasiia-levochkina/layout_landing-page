@@ -74,15 +74,12 @@ img {
 .menu__close {
   width: 24px;
   height: 24px;
-
   border: none;
   padding: 0;
   background: transparent;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   cursor: pointer;
 }
 
@@ -100,7 +97,6 @@ img {
   z-index: 20;
   width: min(1260px, calc(100vw - 20px));
   height: min(700px, calc(100vh - 20px));
-
   background: #e5e6e8;
   padding: 24px 20px;
   overflow: auto;
@@ -108,7 +104,7 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%);
   transition: opacity 0.3s ease;
 }
 
@@ -116,13 +112,11 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translate(-50%, -50%) rotate(0deg);
 }
 
 .menu__top {
   display: flex;
   justify-content: flex-end;
-
   margin-bottom: 28px;
 }
 
@@ -136,7 +130,6 @@ img {
   width: fit-content;
   text-decoration: none;
   color: #292929;
-
   font-size: 22px;
   line-height: 1;
   font-weight: 700;
@@ -149,7 +142,6 @@ img {
 
 .menu__contact {
   margin-top: 40px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -164,32 +156,31 @@ img {
 
 .menu__phone {
   font-size: 22px;
-  line-height: 1;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
 .menu__order {
   font-size: 16px;
-  line-height: 1;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   border-bottom: 1px solid #292929;
 }
 
+/* HERO */
+
 .hero {
   width: 100%;
   height: 640px;
 
   background-image: url('../images/girl.svg');
-  background-size: 1260px 4686px;
-  background-position: center center;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 
   display: flex;
   align-items: flex-end;
-
   padding-bottom: 96px;
 }
 
@@ -200,12 +191,13 @@ img {
 .hero__title {
   margin: 0;
   max-width: 498px;
-
   color: #292929;
   font-size: 48px;
   font-weight: 700;
   line-height: 1.17;
 }
+
+/* SECTIONS */
 
 .recommended {
   padding: 80px 0;
@@ -265,19 +257,14 @@ img {
 .btn-view {
   width: 324px;
   height: 56px;
-
   background: #292929;
   color: white;
-
   border: none;
   border-radius: 8px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin-top: 40px;
-
   cursor: pointer;
 }
 
@@ -328,12 +315,6 @@ img {
   border-radius: 8px;
   color: #292929;
   font-family: 'Space Grotesk', sans-serif;
-  transition: border-color 0.3s ease;
-}
-
-.contact input::placeholder,
-.contact textarea::placeholder {
-  color: #7e7e83;
 }
 
 .contact textarea {
@@ -341,79 +322,20 @@ img {
   resize: none;
 }
 
-.contact input:hover,
-.contact textarea:hover {
-  border-color: #d5d7de;
-}
-
-.contact input:focus,
-.contact textarea:focus {
-  outline: none;
-  border-color: #292929;
-}
-
-.contact__info p {
-  margin-top: 0;
-  margin-bottom: 8px;
-  color: #9393a3;
-}
-
-.contact .contact__info a {
-  display: block;
-  color: #292929;
-  text-decoration: none;
-  margin-bottom: 24px;
-}
-
-.contact .contact__info a:last-child {
-  margin-bottom: 0;
-}
-
-.contact .contact__info a:hover {
-  color: #9393a3;
-}
-
 .btn-send {
   width: 100%;
   height: 56px;
-
   background: #f8f8fa;
   color: #292929;
-
   border: 1px solid #d5d7de;
   border-radius: 8px;
   font-weight: 700;
-  transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease;
-
   cursor: pointer;
-}
-
-.btn-send:hover,
-.btn-send:focus {
-  border-color: #c2c5cc;
 }
 
 @media (min-width: 744px) {
   .container {
     padding: 0 72px;
-  }
-
-  .header {
-    padding-top: 32px;
-  }
-
-  .header__logo {
-    width: 172px;
-  }
-
-  .menu__top {
-    margin-bottom: 40px;
-  }
-
-  .menu {
-    padding: 32px 72px;
   }
 
   .hero {
@@ -432,10 +354,6 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
-  .contact__info {
-    margin-top: 64px;
-  }
-
   .about__content {
     grid-template-columns: 1fr 1fr;
   }
@@ -444,16 +362,6 @@ img {
 @media (min-width: 1260px) {
   .container {
     padding: 0 120px;
-  }
-
-  .header {
-    padding-top: 40px;
-  }
-
-  .menu {
-    width: 1260px;
-    height: 700px;
-    padding: 36px 120px;
   }
 
   .hero {
