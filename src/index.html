@@ -2,21 +2,301 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+
+    <title>Nothing Landing</title>
+
+    <link rel="apple-touch-icon" sizes="180x180"
+    href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png"
+    sizes="32x32"
+    href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png"
+    sizes="16x16"
+    href="./favicon/favicon-16x16.png" />
+    <link rel="icon" href="./favicon/favicon.ico" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+
     <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
-      href="./styles/main.scss"
     />
-    <script
-      src="scripts/main.js"
-      defer
-    ></script>
+
+    <link rel="stylesheet" href="./styles/main.scss" />
   </head>
-  <body>
-    <h1>Landing Page</h1>
+
+  <body id="top">
+    <header class="header">
+      <div class="container header__content">
+        <a
+          href="#top"
+          class="header__logo-link"
+          aria-label="Go to top"
+        >
+          <img
+            class="header__logo"
+            src="./icons/Logo.svg"
+            alt="Nothing logo"
+          />
+        </a>
+
+        <div class="header__icons">
+          <a
+            class="header__icon-link"
+            href="tel:+123455555"
+            aria-label="Call us"
+          >
+            <img
+              src="./icons/Icon-Phone-call.svg"
+              alt="Phone call"
+            />
+          </a>
+
+          <button
+            class="menu-btn"
+            type="button"
+            aria-label="Open menu"
+          >
+            <img
+              src="./icons/Icon-Burger-menu.svg"
+              alt="Menu"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="menu__top">
+        <button
+          class="menu__close"
+          type="button"
+          aria-label="Close menu"
+        >
+          <img
+            src="./icons/Icon-Close.svg"
+            alt="Close menu"
+          />
+        </button>
+      </div>
+
+      <nav class="menu__nav">
+        <a href="#recommended">Recommended</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="menu__contact">
+        <a
+          class="menu__phone"
+          href="tel:+123455555555"
+        >
+          +1 234 5555-55-55
+        </a>
+
+        <a
+          class="menu__order"
+          href="tel:+123455555555"
+        >
+          Call to order
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Bring joy back to <br />
+            the everyday
+          </h1>
+        </div>
+      </section>
+
+      <section
+        class="recommended"
+        id="recommended"
+      >
+        <div class="container">
+          <h2 class="section-title">Recommended</h2>
+
+          <div class="recommended__grid">
+            <article class="card">
+              <img src="./images/phone.png" alt="Phone (1)" />
+
+              <h3>Phone (1)</h3>
+
+              <p>
+                Through the Glyph Interface, a perfected OS and exceptional dual
+                camera. All startlingly fast.
+              </p>
+
+              <span>$499.00</span>
+            </article>
+
+            <article class="card">
+              <img src="./images/airpods.png" alt="Ear (2)" />
+
+              <h3>Ear (2)</h3>
+
+              <p>
+                Perfecting the path from artist to ear. So that music sounds
+                just as it was intended.
+              </p>
+
+              <span>$149.00</span>
+            </article>
+
+            <article class="card">
+              <img src="./images/airpods-2.png" alt="Ear (stick)" />
+
+              <h3>Ear (stick)</h3>
+
+              <p>
+                Tech you can’t feel. Leaving just space for sound to come to
+                life. Powered by custom sound technology.
+              </p>
+
+              <span>$119.00</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="categories"
+        id="categories"
+      >
+        <div class="container">
+          <h2 class="section-title">
+            Browse Nothing products by category
+          </h2>
+
+          <div class="categories__grid">
+            <div class="category category--wide">
+              <img src="./images/parrots.png" alt="All products" />
+              <p>All products</p>
+            </div>
+
+            <div class="category">
+              <img src="./images/hand-with-phone.png" alt="Hand with phone" />
+            </div>
+
+            <div class="category">
+              <img src="./images/airpod-1.png" alt="Audio" />
+              <p>Audio</p>
+            </div>
+
+            <div class="category category--wide">
+              <img src="./images/hand-with-phone-2.png" alt="Hand with phone" />
+            </div>
+
+            <div class="category category--wide">
+              <img src="./images/phone-black.png" alt="Phone black" />
+              <p>Accessories</p>
+            </div>
+
+            <div class="category">
+              <img src="./images/charger.png" alt="Charger" />
+            </div>
+          </div>
+
+          <a href="#categories" class="btn-view">View all</a>
+        </div>
+      </section>
+
+      <img src="./images/black-detail.png" alt="Detail" />
+
+      <section
+        class="about"
+        id="about"
+      >
+        <div class="container about__content">
+          <h2>About us</h2>
+
+          <p class="about__text">
+            We’re a London-based tech company on a mission to remove barriers
+            between people and technology.
+            <br /><br />
+            To do this, we’re crafting intuitive, flawlessly connected products
+            that improve our lives without getting in the way.
+            <br />
+            No confusing tech-speak. No silly product names.
+            <br />
+            Just artistry, passion and trust.
+            <br />
+            And products we’re proud to share with our friends and family.
+            <br /><br />
+            Because beautiful tech shouldn’t be complicated.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="contact"
+        id="contact"
+      >
+        <div class="container contact__content">
+          <form
+            class="contact__form"
+          >
+            <h2>Contact us</h2>
+
+            <input
+              type="text"
+              placeholder="Your name"
+              required
+            />
+
+            <input
+              type="email"
+              placeholder="Your email"
+              required
+            />
+
+            <textarea
+              placeholder="Your message"
+              required
+            ></textarea>
+
+            <button class="btn-send">Send</button>
+
+            <p
+              class="contact__success"
+              aria-live="polite"
+            >
+              Thank you, Nothing will contact you soon!
+            </p>
+          </form>
+
+          <div class="contact__info">
+            <p>Phone</p>
+            <a href="tel:+123455555555">+1 234 5555-55-55</a>
+
+            <p>Email</p>
+            <a href="mailto:hello@nothing.com">hello@nothing.com</a>
+
+            <p>Address</p>
+
+            <a
+              href="https://maps.google.com/?q=400+first+ave,+suite+700,+Minneapolis,+MN+55401"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              400 first ave.<br />
+              suite 700<br />
+              Minneapolis, MN 55401
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
